@@ -12,5 +12,5 @@ def predict_next_rate(df):
     model.fit(x, y)
 
     next_day_index = len(df)
-    predicted_rate = model.predict([next_day_index])[0]
+    predicted_rate = model.predict([[next_day_index]])[0]
     return predicted_rate
